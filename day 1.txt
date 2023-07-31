@@ -1,0 +1,32 @@
+git --version to check wheater the git is downloaded or not
+.git-scm.com
+version control distributed system vcds 
+
+general front end back end ==> general full stack
+c is used in gaming because it has low computational time
+java is used in application. -  computation time = 4 seconds - application oriented libraries are high. 
+
+frontend - html, css, js, angular, react
+
+backend - c, c++, java, python, velocity, c#, java script, node js, express
+
+Data Base - SQL, no SQL
+
+API = application program interface, used as to and fro connection between frontend and backend
+
+MLops -> combination of ML + Devops. automatically finetune its model.
+
+MEAN, MERN
+
+M -> Mongo DB
+E -> Express JS
+A -> Angular
+N -> Node JS
+
+M -> Mongo DB
+E -> Express JS
+R -> React
+N -> Node JS
+
+ssh-keygen for generating new ssh key
+	

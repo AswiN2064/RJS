@@ -1,0 +1,40 @@
+merge conflict files
+index.html -> main     index.html -> workshop
+both are different
+
+visual studio coe -> find merge conflict editor -> options "accept incoming, accept combination, ignore"
+commit push
+
+HTML:
+Hyper Text Markup Language
+Designing Webpages
+structure of HTML:5
+<!DOCTYPE html>  # under html file
+<html lang="en"> # language english
+<head>           # tag
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<img></img>, <link> => inside head tag
+it can't able to do any math operations -> there we go to java -> that java file can be added using script tag between head tag because of searching purpose for large scale website.
+
+<scrpit src = ""></script>
+
+major tags in body tag -> <h1></h1> ... <h6></h6>, 
+
+React JS:
+var a = <h1>......</h1>  ==> to change html as jsx (simply assigning variables to html)
+
+CSS:
+Cascading Style Sheet
+we can style our forms or page etc., which we can't do it in html
+customization
+user attractive -> ux -> user experience
+user friendly
+styling the web page

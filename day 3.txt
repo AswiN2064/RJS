@@ -1,0 +1,49 @@
+italic, bold, underline
+<link rel = 'stylesheet' href = ''> ==> adding icon to our wwebsite
+href ==> this will refer the link
+<div></div> ==> make as specific division -> to split
+<span></span> ==> creating a block inside a line
+html5up.net
+
+CSS -> cascading style sheet
+types:
+	inline css  --> editing / styling inside the line or tag
+<h1 style = 'color:red'>Heading 1</h1>
+	internal css
+h1{
+color : blue
+}
+	external css --> sepetrate file for css
+style css -> all css code
+|
+html code
+
+selector{
+declaration : value,
+declaration : value
+}
+
+selector types -> element, class, id, universal, grouping.
+
+internal CSS -> code looks messy, not organized
+External CSS -> when we need a organized code
+
+element -> h1,p,h2,div
+class -> .hello -> p.hello
+id -> # hello{}
+universal -> * all css code for whole HTML file
+grouping ->
+h1{
+color : red,
+font_size : 20 px
+}
+p{
+color : red,
+font_size : 20 px
+}
+
+instead of doing this
+h1,p{
+color : red,
+font_size : 20 px
+}

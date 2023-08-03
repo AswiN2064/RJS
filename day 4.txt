@@ -1,0 +1,28 @@
+Java script :
+Dynamic typing -> if we need to assign a variable we need to initialize the variable 
+int a = 5 ==> here int is type initialization
+in dynamic typing we can change the type
+static typing -> we cant change the type
+in JS
+assigning variable ->
+a = 5
+a = "aswin"
+a = 5.12
+
+here 'a' is called as undefined variable. because we are not initializing variable.
+
+Data types => int, string, float, boolean, complex, char (a = 'a' we can assing only one value to the variable)
+char a = "A"
+char b[10] = "aswin"
+var, let, constant ==> defined variables in JS
+
+constant-the value could not be changed - global scope
+
+var - we can change the values - global scope
+
+let - local scope
+
+console.log() - used to print the values
+
+script tag -lnk scripting file in html
+

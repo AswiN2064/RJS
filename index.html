@@ -6,6 +6,28 @@
     <title>Practice</title>
     <link rel = "icon" href="asset/1667532213675.jpg">
     <style>
+        .flex-container{
+            display: flex;
+            background-color: paleturquoise;
+            flex-direction: column;
+        }
+        .flex-container > div{
+            background-color: azure;
+            font-size: 30px;
+            margin: 10px;
+        }
+        .grid-containers {
+            display:grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid-item {
+            background-color: rgba(red, green, blue, alpha);
+            border: 1px solid rgba(red, green, blue, alpha);
+            padding: 20px;
+            text-align: center;
+        }
+
+
         /* *{
             font-family: cursive;
         } */
@@ -43,6 +65,14 @@
                     <li>For unordered list => ul tags</li>
                     <li>If li tag was not provided then all the list will be in a straight line</li>
                 </ul>
+                <div class="flex-container">
+                    <div>home</div>
+                    <div>help</div>
+                </div>
+            </div>
+            <div class="grid-containers">
+                <div class="grid-item">hello</div>
+                <div class="grid-item">hi</div>
             </div>
             <div>
                 <ol id = "idtag">

@@ -105,3 +105,19 @@ for (var ele in a){
 
 // printValues(conversation);
 // printValues(conversation);
+
+
+//functions
+// non parametric
+function function_name(){
+    console.log("aswin" + 2064)
+}
+
+function_name()
+
+// parametric
+function function_name_1(a){
+    return (a ** 5)
+}
+
+console.log(function_name_1(2))

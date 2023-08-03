@@ -47,3 +47,7 @@ h1,p{
 color : red,
 font_size : 20 px
 }
+
+git log -5
+git status
+git push

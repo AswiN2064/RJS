@@ -48,3 +48,60 @@ else{
 // array.forEach(element => {
 //     console.log(element)
 // })
+
+// Objects in Java script is just a dictionary in python
+
+var a = {
+    car : "BMW",
+    model : "Volvo x57",
+    airbags : 8,
+    wheels : 5,
+    color : "red"
+}
+
+// Extraction from objects
+console.log(a["car"])
+console.log(a.model)
+
+var some = 'wheels'
+console.log(a[some])
+
+console.log(a)
+// changing the value of the key
+a.car = "mahindra"
+a.model = "xuv700"
+console.log(a)
+// adding a key and value pair
+a.sunroof = {shape:"rectangle", is_present:"yes"}
+console.log(a.sunroof.shape)
+// using for loop
+for (var ele in a){
+    console.log(ele + ":" + a[ele])
+    if (typeof a[ele] == "object"){
+        for (var val in a[ele]){
+            console.log(val + ":" + a[ele][val])
+        }
+    }
+}
+
+
+// for (var ele in a) {
+//     if (typeof a[key] === "object") {
+//         printValues(a[key]);   
+//     } else {
+//         console.log(a[key]);    
+//     }
+// }
+
+// function printValues(obj) {
+//     for (var key in a) {
+//         if (typeof a[key] === "object") {
+//             printValues(a[key]);   
+//         } else {
+//             console.log(a[key]);    
+//         }
+//     }
+// }
+
+// printValues(conversation);
+// printValues(conversation);

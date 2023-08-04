@@ -58,28 +58,47 @@ body {
   color: #555555;
 }
 
-/* Neon Light Animations */
-@keyframes neon-glow {
-  0% {
-    box-shadow: 0 0 10px cyan;
-  }
-  50% {
-    box-shadow: 0 0 30px cyan;
-  }
-  100% {
-    box-shadow: 0 0 10px cyan;
-  }
-}
-
 .name-box {
+  position: relative; /* Add position: relative to allow positioning the ::before pseudo-element */
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
-  animation: neon-glow 2s linear infinite;
-  /* padding-left: 60%;
-  scroll-padding-top:initial; */
-  /* scroll-padding-top:initial; */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.name-box::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  animation: neon-rotate 2s alternate-reverse;
+}
+
+/* Neon Light Animations */
+/* @keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 20px cyan;
+  }
+  50% {
+    box-shadow: 0 0 50px cyan;
+  }
+  100% {
+    box-shadow: 0 0 20px cyan;
+  }
+} */
+
+@keyframes neon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h1 {
@@ -109,3 +128,4 @@ h1 {
   color: #555555;
   text-decoration: none;
 }
+

@@ -1,0 +1,10 @@
+React JS -> react is a library JS is a language
+
+It is present in NodeJS framework
+
+How to install this react ? ==> it through npm (node package manager)
+
+command for installing something in npm ==> npm install <> 
+
+create a folder in github -> react
+drag and drop node folder in git hub folder

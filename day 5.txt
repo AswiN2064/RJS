@@ -8,3 +8,5 @@ command for installing something in npm ==> npm install <>
 
 create a folder in github -> react
 drag and drop node folder in git hub folder
+
+react developer tools

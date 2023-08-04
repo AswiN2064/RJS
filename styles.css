@@ -76,29 +76,45 @@ body {
   z-index: -1;
   border-radius: 25px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
-  animation: neon-rotate 2s alternate-reverse;
+  animation: neon-move 20s infinite, neon-slide 4s infinite linear;
 }
 
 /* Neon Light Animations */
-/* @keyframes neon-glow {
+@keyframes neon-move {
   0% {
-    box-shadow: 0 0 20px cyan;
+    box-shadow: 0 0 10px cyan;
+    transform: translateX(0);
   }
   50% {
-    box-shadow: 0 0 50px cyan;
+    box-shadow: 0 0 30px cyan;
+    transform: translateX(100px); /* Adjust the value as needed to control the movement distance */
   }
   100% {
-    box-shadow: 0 0 20px cyan;
+    box-shadow: 0 0 10px cyan;
+    transform: translateX(0);
   }
-} */
+}
 
-@keyframes neon-rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.element {
+  /* Other styles for the element */
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid cyan;
+  /* Animations */
+  animation: neon-move 2s infinite, neon-slide 4s infinite linear; /* You can adjust the durations as needed */
+}
+
+
+.name-box {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  animation: neon-move 2s alternate-reverse;
+  /* padding-left: 60%;
+  scroll-padding-top:initial; */
+  /* scroll-padding-top:initial; */
 }
 
 h1 {

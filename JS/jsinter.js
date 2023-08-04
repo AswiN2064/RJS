@@ -122,6 +122,25 @@ for (var ele in a){
 
 // console.log(function_name_1(2))
 
-a = () => console.log("hello world")
+// a = () => console.log("hello world")
 
-a()
+// a()
+
+class AIandDS{
+    abcd = "alphabet";
+    diff(){
+        console.log("hritick mind voice: doli doli doli doli...")
+    }
+    sum(){
+        console.log(this.abcd)
+        console.log("aswin")
+        this.diff()
+    }
+    // console.log(abcd)
+}
+a = new Object()
+a.name = "AI and DS"
+console.log(a)
+object1 = new AIandDS();
+// console.log(object1.abcd())
+object1.sum()

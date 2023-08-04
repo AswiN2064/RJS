@@ -26,16 +26,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(222, 229, 238, 0.5);
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  box-shadow: 0 0 10px cyan;
   padding: 20px;
 }
 
 .profile-photo {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 30px;
   background-image: url('asset\1667532213675.jpg'); /* Add your profile photo URL */
   background-size: cover;
   background-position: center;
@@ -61,22 +61,25 @@ body {
 /* Neon Light Animations */
 @keyframes neon-glow {
   0% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 10px cyan;
   }
   50% {
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 30px cyan;
   }
   100% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 10px cyan;
   }
 }
 
 .name-box {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
   animation: neon-glow 2s linear infinite;
+  /* padding-left: 60%;
+  scroll-padding-top:initial; */
+  /* scroll-padding-top:initial; */
 }
 
 h1 {

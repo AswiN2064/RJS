@@ -109,15 +109,19 @@ for (var ele in a){
 
 //functions
 // non parametric
-function function_name(){
-    console.log("aswin" + 2064)
-}
+// function function_name(){
+//     console.log("aswin" + 2064)
+// }
 
-function_name()
+// function_name()
 
 // parametric
-function function_name_1(a){
-    return (a ** 5)
-}
+// function function_name_1(a){
+//     return (a ** 5)
+// }
 
-console.log(function_name_1(2))
+// console.log(function_name_1(2))
+
+a = () => console.log("hello world")
+
+a()

@@ -1,0 +1,375 @@
+.App {
+  text-align:left;
+  background-color: #282c34;
+  color: white;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns:auto;
+  background-color:black;
+  padding: 10px;
+
+}
+.grid-item {
+  background-color:rgb(143, 193, 143);
+  border: 3px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+
+}
+.container{
+  max-width: 800px;
+  min-height: 600px;
+  margin-inline: auto;
+  display: flex;
+  gap: 1rem;
+  
+  justify-content: center;
+  
+  align-items: center;
+  flex-direction:row-reverse;
+  flex-flow:row wrap;
+
+  
+}
+.be{
+  height: 100px;
+  background-color: rgb(161, 107, 125);
+  color: beige;
+  font-size: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  border:3px solid black;
+  
+  align-items: center;
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+App.css
+
+
+index.css
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+main.css
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 0
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+.App {
+    background-color: #282c34;
+    color: #fff;
+    text-align: left
+}
+
+.App-logo {
+    height: 5vmin;
+    pointer-events: none
+}
+
+@media (prefers-reduced-motion:no-preference) {
+    .App-logo {
+        -webkit-animation: App-logo-spin 20s linear infinite;
+        animation: App-logo-spin 20s linear infinite
+    }
+}
+
+.App-header {
+    align-items: left;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(5px + 2vmin);
+    justify-content: left;
+    min-height: 10vh
+}
+
+.App-link {
+    color: #61dafb
+}
+
+@-webkit-keyframes App-logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes App-logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+.grid-container {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px
+}
+
+.grid-item {
+    background-color: #8fc18f;
+    border: 3px solid #000;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center
+}
+
+.container {
+    flex-direction: row-reverse;
+    flex-flow: row wrap;
+    gap: 1rem;
+    margin-inline:auto;max-width: 800px;
+    min-height: 600px
+}
+
+.be,.container {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.be {
+     flex-grow: 1;
+    background-color: #a16b7d;
+    border: 3px solid #000;
+    color: beige;
+    flex-basis: 100px;
+    font-size: 2rem;
+    gap: .5rem;
+    height: 100px;
+    padding: .5rem
+}
+
+
+
+App.js
+
+import logo from './logo.svg';
+import './App.css';
+import './index.js';
+import pic from './experience.jpeg' ;
+import React, { useState } from 'react';
+
+
+
+
+function App() {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (buttonKey) => {
+    setActiveButton(buttonKey === activeButton ? null : buttonKey);
+  };
+
+  const contentMapping = {
+    p1: "This is JK family's page",
+    p2: "This is Thrishna's page",
+    p3: "This is Sanjay's page",
+    p4: "This is Jayakumar's page",
+    p5: "This is Kavitha's page",
+  };
+
+  return (
+    <div className="App">
+      <h1>Welcome all</h1>
+      <button type="button" onClick={() => handleButtonClick('p1')}>p1</button>
+        {activeButton === 'p1' && (
+          <div>
+            <h1>{contentMapping.p1}</h1>
+          </div>
+        )}
+        <button type="button" onClick={() => handleButtonClick('p2')}>p2</button>
+        {activeButton === 'p2' && (
+          <div>
+            <h1>{contentMapping.p2}</h1>
+          </div>
+        )}
+        <button type="button" onClick={() => handleButtonClick('p3')}>p3</button>
+        {activeButton === 'p3' && (
+          <div>
+            <h1>{contentMapping.p3}</h1>
+          </div>
+        )}
+
+        <button type="button" onClick={() => handleButtonClick('p4')}>p4</button>
+        {activeButton === 'p4' && (
+          <div>
+            <h1>{contentMapping.p4}</h1>
+          </div>
+        )}
+
+        <button type="button" onClick={() => handleButtonClick('p5')}>p5</button>
+        {activeButton === 'p5' && (
+          <div>
+            <h1>{contentMapping.p5}</h1>
+          </div>
+        )}
+        <header className="App-header">
+          <h1>Hello</h1>
+          <p>Thrishna Jayakumar</p>
+        <p><em>THIS IS SRI THRISHNA</em></p>
+        <div>
+          <img src={pic} />
+        </div>
+        <h2>EDUCATION</h2>
+          
+        <p>completed my schooling at<b><u>SRINIVASA VIDHYALAYA MATRIC HR SEC SCHOOL UDUMALPET</u></b></p>
+        <p> currently pursuing my UG degree in B Tech <b><u>ARTIFICAL INTELLIGENCE AND DATA SCIENCE</u></b></p>
+        <h2>MARKS</h2>
+        <ol type="1" start="1">
+            <li>10th - 96%</li>
+            <li>12th - 95%</li>
+        </ol>
+        <h2>PROGRAMMING LANGUAGES</h2>
+        <ol type="A" start="1" >
+            <li>python</li>
+            <li>html</li>
+            <li>css</li>
+          </ol>
+        <h2>DOMAINS</h2>
+        <ol type="a" start="1">
+            <li>AI</li>
+            <li>ML</li>
+            <li>data science</li>
+            <li>
+                app development
+            </li>   
+        </ol>
+        <div class="grid-container">
+            <div class="grid-item">Jayakumar</div>
+            <div class="grid-item">Kavitha</div>
+            <div class="grid-item">Sri Thrishna</div>
+            <div class="grid-item">Sri Sanjay Raghav</div>
+                  
+        </div>
+                
+        <div class="container">
+            <div class="be">Sri Thrishna</div>
+            <div class="be">Karishma</div>
+            <div class="be">Kamali</div>
+            <div class="be">Amitha</div>
+            <div class="be">Bhavya</div>
+            <div class="be">Nivethita</div>
+            <div class="be">Evan</div>
+            <div class="be">Kavinaya</div>
+        </div>
+      </header>
+    </div>
+  );
+}
+export default App;
+
+
+index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+/*# sourceMappingURL=main.275534d0.css.map*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
